@@ -16,7 +16,7 @@ ReactDOM.render(
                 <Nav.Link href="#features">Burgers</Nav.Link>
                 <Nav.Link href="#pricing">Rolls</Nav.Link>
             </Nav>
-        </Navbar>,
+        </Navbar>
         <Carousel>
             <Carousel.Item>
                 <img
