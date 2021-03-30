@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import {Navbar,Nav,Carousel} from "react-bootstrap";
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -31,8 +30,8 @@ ReactDOM.render(
           <Carousel.Item>
               <img
                   className="d-block w-100"
-                  src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg"
-                  alt="Second slide"
+                  src="https://klike.net/uploads/posts/2019-06/1559545617_2.jpg"
+                  alt="Burger"
               />
 
               <Carousel.Caption>
