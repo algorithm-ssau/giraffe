@@ -6,7 +6,6 @@ const PORT = process.env.PORT
 
 connectDB();
 
-
 app.use(express.json());
 
 app.get("/", (req, res) => {
