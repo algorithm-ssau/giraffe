@@ -1,29 +1,17 @@
 const express = require('express')
-const mongoose = require('mongoose')
-const config = require('config')
+const connectDB = require("./config/db");
 require('dotenv').config()
 const app = express()
-const port = 3001
+const PORT = process.env.PORT
 
-app.get('/', (req, res) => {
-    res.send('Hello World!')
-})
+connectDB();
 
-async function start(){
-    try {
-        await mongoose.connect(config.get('mongoURI'), {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-            useCreateIndex: true
-        })
 
-        app.listen(config.get('port'), () => {
-            console.log(`Example app listening at http://localhost:${port}`)
-        })
-    }catch (e){
-        console.log('Server Error', e.message)
-        process.exit(1)
-    }
-}
+app.use(express.json());
 
-start()
+app.get("/", (req, res) => {
+    res.json({ message: "API running..." });
+});
+
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
