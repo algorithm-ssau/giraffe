@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "cd.. && cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node seederScript.js"
   },
   "keywords": [],
   "author": "",
