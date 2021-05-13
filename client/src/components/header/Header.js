@@ -1,7 +1,10 @@
 import logo from './logo.png';
+import {useHttp} from "../../hooks/http.hook";
+import {useEffect} from 'react';
+import axios from "axios";
 
+const Header = () => {
 
-function Header() {
     return (
         <div className="Header">
             <header className="App-header">
@@ -12,7 +15,6 @@ function Header() {
                         </h6>
                     </div>
                     <a className="menu-nav-icon" data-menu="#main-menu" href="#"><i className="ion-navicon"/></a>
-
                     <ul className="main-menu font-mountainsre" id="main-menu">
 
                         <li><a href="index.html">Главная</a></li>
@@ -25,5 +27,4 @@ function Header() {
         </div>
     );
 }
-
 export default Header;

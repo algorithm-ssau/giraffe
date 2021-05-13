@@ -3,12 +3,11 @@ import ReactDOM from 'react-dom';
 import Header from './components/header/Header';
 import Label from "./components/label/Label";
 import Footer from "./components/footer/Footer";
+import Popular from "./components/popular/Popular"
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-    <React.Fragment>
-        <Header/>
-    </React.Fragment>,
+        <Header/>,
   document.getElementById("root")
 );
 
@@ -24,6 +23,11 @@ ReactDOM.render(
         <Footer/>
     </React.StrictMode>,
     document.getElementById('footer')
+);
+
+ReactDOM.render(
+    <Popular/>,
+    document.getElementById('popular')
 );
 
 
