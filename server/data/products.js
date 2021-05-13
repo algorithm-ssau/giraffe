@@ -5,7 +5,7 @@ const products = [
             "Состав: Сыр моцарелла, томат черри, орегано, томатный соус. Вес 781 г",
         price: 290,
         category: "Пицца",
-        imageUrl: "client/public/images/marg.png",
+        imageUrl: "images/marg.png",
     },
     {
         name: "Ветчина и сыр",
@@ -13,7 +13,7 @@ const products = [
             "Состав: Ветчина, сыр моцарелла, томатный соус. Вес 780 г",
         price: 350,
         category: "Пицца",
-        imageUrl: "client/public/images/ham.png",
+        imageUrl: "images/ham.png",
     },
     {
         name: "Мясная",
@@ -21,7 +21,7 @@ const products = [
             "Состав: Куриное филе, ветчина, бекон, колбаски пепперони, сыр моцарелла, томатный соус. Вес 930 г",
         price: 400,
         category: "Пицца",
-        imageUrl: "client/public/images/mys.png",
+        imageUrl: "images/mys.png",
     },
     {
         name: "Пепперони",
@@ -29,7 +29,7 @@ const products = [
             "Состав: Колбаски пепперони, сыр моцарелла, томатный соус. Вес 680 г",
         price: 350,
         category: "Пицца",
-        imageUrl: "client/public/images/peperony.png",
+        imageUrl: "images/peperony.png",
 
     },
     {
@@ -38,7 +38,7 @@ const products = [
             "Состав: Куриное филе, перец сладкий, томат черри, сыр моцарелла, острый перец халапеньо, томатный соус. Вес 850 г",
         price: 380,
         category: "Пицца",
-        imageUrl: "client/public/images/mexic.png",
+        imageUrl: "images/mexic.png",
     },
     {
         name: "Гавайская",
@@ -46,7 +46,7 @@ const products = [
             "Состав: Куриное филе, ананас, сыр моцарелла, соус белый. Вес 900 г",
         price: 390,
         category: "Пицца",
-        imageUrl: "client/public/images/gav.png",
+        imageUrl: "images/gav.png",
     },
     {
         name: "Филадельфия",
@@ -54,7 +54,7 @@ const products = [
             "Состав: Лосось, огурец, авокадо, кунжут, сыр, зеленый лук, 6 шт. Вес 225 г",
         price: 250,
         category: "Роллы",
-        imageUrl: "client/public/images/fila.png",
+        imageUrl: "images/fila.png",
     },
     {
         name: "Калифорния",
@@ -62,7 +62,7 @@ const products = [
             "Состав: Краб-микс, авокадо, огурец, тобико, 6 шт. Вес 170 г",
         price: 250,
         category: "Роллы",
-        imageUrl: "client/public/images/kalifornia.png",
+        imageUrl: "images/kalifornia.png",
     },
     {
         name: "Гауди",
@@ -70,7 +70,7 @@ const products = [
             "Состав: Лосось копченый, руккола, перец, сыр, авокадо, кунжут, зеленый лук, 6 шт. Вес 170 г",
         price: 250,
         category: "Роллы",
-        imageUrl: "client/public/images/gaudy.jpg",
+        imageUrl: "images/gaudy.jpg",
 
     },
     {
@@ -79,7 +79,7 @@ const products = [
             "Состав: Лосось, угорь, сыр, кунжут и острый соус, 6 шт. Вес 165 г",
         price: 250,
         category: "Роллы",
-        imageUrl: "client/public/images/kurai.jpg",
+        imageUrl: "images/kurai.jpg",
 
     },
 
