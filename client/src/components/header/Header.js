@@ -1,7 +1,5 @@
 import logo from './logo.png';
-import {useHttp} from "../../hooks/http.hook";
-import {useEffect} from 'react';
-import axios from "axios";
+
 
 const Header = () => {
 

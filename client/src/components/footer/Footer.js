@@ -1,7 +1,7 @@
 function Footer() {
     return (
         <footer className="pb-60  pt-70 pos-relative">
-            <div className="pos-top triangle-bottom"></div>
+            <div className="pos-top triangle-bottom"/>
             <div className="container-fluid">
                 <a href="index.html">
                     <div className="ïmg-200x mlr-auto pos-relative">
