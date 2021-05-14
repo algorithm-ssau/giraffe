@@ -28,7 +28,7 @@
 #### :small_blue_diamond: [Сухов Антон]
 
 ### :mortar_board: Научный руководитель:
-#### :large_orange_diamond: [Жданова Александра Николаевна]
+#### :small_orange_diamond: [Жданова Александра Николаевна]
 
 [Черкасов Артем]: https://github.com/4abrec
 [Сулименко Сергей]: https://github.com/B-rnCorn
