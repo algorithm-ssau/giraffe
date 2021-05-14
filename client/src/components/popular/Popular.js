@@ -39,6 +39,7 @@ class Popular extends Component {
                         <div className="pos-top triangle-bottom"/>
                         <div className="container">
                             <div className="heading">
+                                <h2>Популярные позиции</h2>
                             </div>
                             <div className="row">
                                 { popular.map(product =>

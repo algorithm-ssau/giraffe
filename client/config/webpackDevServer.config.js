@@ -100,7 +100,7 @@ module.exports = function (proxy, allowedHost) {
       verbose: true,
       rewrites: [
         { from: /^\/menu/, to: '/menu.html' },
-        { from: /^\/about/, to: '/about.html'}
+        { from: /^\/about/, to: '/review.html'}
       ]
     },
     public: allowedHost,
