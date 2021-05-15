@@ -376,7 +376,7 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu {
         content: '';
         height: 10px;
         position: absolute;
-        top: 0px;
+        top: 0;
         left: 0;
         right: 0;
         background: url(../images/triangle_bg.png) repeat-x;
@@ -388,7 +388,7 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu {
         content: '';
         height: 10px;
         position: absolute;
-        bottom: 0px;
+        bottom: 0;
         left: 0;
         right: 0;
         background: url(../images/triangle_bg.png) repeat-x;
@@ -403,7 +403,8 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu {
 --------------------------------- */
 
 section {
-        padding: 100px 0 70px;
+        padding: 50px 0 40px;
+
 }
 
 .heading {
@@ -772,7 +773,8 @@ section {
 
 .bg-seller:after{ content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: -1; background: rgba(0,0,0,.85); }
 .bg-seller1{ background: url(../images/roll.jpg)  no-repeat; background-size: cover; position: relative; z-index: 1; }
-
+.bg-seller2{background: url(../images/drink.jpg)  no-repeat; background-size: cover; position: relative; z-index: 1;}
+.bg-seller2:after{ content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: -1; background: rgba(0,0,0,.85); }
 .bg-seller1:after{ content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: -1; background: rgba(0,0,0,.85); }
 
 .bg-191 { background: #191919; }

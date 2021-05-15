@@ -5,6 +5,7 @@ import Footer from "../components/footer/Footer";
 import Pizza from "../components/menu_pizza/Pizza";
 import reportWebVitals from "../reportWebVitals";
 import Roll from "../components/menu_roll/Roll";
+import Drink from "../components/menu_drinks/Drink";
 
 
 ReactDOM.render(
@@ -29,6 +30,11 @@ ReactDOM.render(
 ReactDOM.render(
     <Roll/>,
     document.getElementById('rolls')
+);
+
+ReactDOM.render(
+    <Drink/>,
+    document.getElementById('drink')
 );
 
 reportWebVitals();

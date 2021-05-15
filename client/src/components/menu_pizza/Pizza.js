@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import {getRandom} from '../random'
 class Pizza extends Component {
 
     constructor(props) {
@@ -46,9 +46,11 @@ class Pizza extends Component {
             );
         } else{
 
-            const pizzas = products
+            let pizzas = products
                 .filter(products => products.category === "Пицца");
-            const popular = pizzas.slice(0, 4);
+
+            pizzas = pizzas.slice(0, 12);
+            const result = getRandom(pizzas, 4);
 
             return (
                 <div className="Pizza">
@@ -61,8 +63,9 @@ class Pizza extends Component {
                                     <h4 className="font-30 font-sm-20  center-text mb-25">Пицца</h4>
                                 </div>
                             </section>
+                            <br/>
                             <div className="row">
-                                {popular.map(product =>
+                                {result.map(product =>
                                 <div className="col-lg-3 col-md-4  col-sm-6 ">
                                     <div className="center-text mb-30">
                                         <div className="ïmg-200x mlr-auto pos-relative">
