@@ -3,11 +3,11 @@
 ####  Это сайт ресторана GiraffeFood. На нем вы сможете найти актуальное меню, цены и состав блюд, а также  отзывы посетителей.
 
 ### :factory: Стек технологий:
-* NodeJs
-* MongoDb
-* React
+* NodeJS
+* MongoDB
+* ReactJS
 * Bootstrap
-* HTMl
+* HTML
 * CSS
 * Express
 
