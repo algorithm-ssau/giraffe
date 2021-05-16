@@ -1,17 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import Header from './components/header/Header';
+import Label from "./components/label/Label";
+import Footer from "./components/footer/Footer";
+import Popular from "./components/popular/Popular"
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+        <Header/>,
+  document.getElementById("root")
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+ReactDOM.render(
+    <React.StrictMode>
+        <Label />
+    </React.StrictMode>,
+    document.getElementById('label')
+);
+
+ReactDOM.render(
+    <React.StrictMode>
+        <Footer/>
+    </React.StrictMode>,
+    document.getElementById('footer')
+);
+
+ReactDOM.render(
+    <Popular/>,
+    document.getElementById('popular')
+);
+
 reportWebVitals();
