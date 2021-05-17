@@ -1,1 +1,1 @@
-*.pro linguist-language=Python
+*.python_api linguist-language=Python
