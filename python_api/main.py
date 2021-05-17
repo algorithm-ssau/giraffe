@@ -1,11 +1,12 @@
 from flask import json
 from flask_pymongo import PyMongo
-from python_api import config
 import flask
 
+PORT = 2000
+MONGO_URI = "mongodb+srv://user:123@cluster0.pkhp0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+
 app = flask.Flask(__name__)
-app.config[
-    "MONGO_URI"] = config.MONGO_URI
+app.config["MONGO_URI"] = MONGO_URI
 mongo = PyMongo(app)
 
 
@@ -27,6 +28,7 @@ def get_products():
             "imageUrl": product["imageUrl"]
         }
         data.append(item)
+        print(data)
     return json.dumps(data, ensure_ascii=False).encode('utf8')
 
 
@@ -43,6 +45,7 @@ def get_pizzas():
             "imageUrl": pizza["imageUrl"]
         }
         data.append(item)
+        print(data)
     return json.dumps(data, ensure_ascii=False).encode('utf8')
 
 
@@ -59,6 +62,24 @@ def get_rolls():
             "imageUrl": roll["imageUrl"]
         }
         data.append(item)
+        print(data)
+    return json.dumps(data, ensure_ascii=False).encode('utf8')
+
+
+@app.route("/products/drinks", methods=['GET'])
+def get_drinks():
+    drinks = mongo.db.products.find({"category": "Напитки"})
+    data = []
+    for drink in drinks:
+        item = {
+            "name": drink["name"],
+            "description": drink["description"],
+            "price": drink["price"],
+            "category": drink["category"],
+            "imageUrl": drink["imageUrl"]
+        }
+        data.append(item)
+        print(data)
     return json.dumps(data, ensure_ascii=False).encode('utf8')
 
 
@@ -73,8 +94,9 @@ def get_reviews():
             "text": review["text"],
         }
         data.append(item)
+        print(data)
     return json.dumps(data, ensure_ascii=False).encode('utf8')
 
 
 if __name__ == '__main__':
-    app.run(port=config.PORT)
+    app.run(port=PORT)
