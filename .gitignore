@@ -8,7 +8,7 @@
 /.idea
 # testing
 /coverage
-python_api/.venv
+
 
 # production
 /build
