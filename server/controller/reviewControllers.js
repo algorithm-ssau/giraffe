@@ -11,6 +11,16 @@ const getReviews = async (req, res) => {
     }
 };
 
+const postReview = async (req,res) => {
+    try{
+        console.log(req.body);
+        await Review.collection.insertOne(req.body);
+    } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: "Server Error" });
+}
+}
+
 const getReviewById = async (req, res) => {
     try {
         const review = await Review.findById(req.params.id);
@@ -25,4 +35,5 @@ const getReviewById = async (req, res) => {
 module.exports = {
     getReviews,
     getReviewById,
+    postReview,
 };
